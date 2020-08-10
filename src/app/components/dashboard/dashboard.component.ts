@@ -42,7 +42,7 @@ export class DashboardComponent implements OnInit {
 
   showCovidData(term: string = '') {
     var covid_;
-this.loading = true;
+    this.loading = true;
     if (term != '') {
       covid_ = this.covid.getDataCovidByCountry(term);
     } else {
@@ -56,7 +56,7 @@ this.loading = true;
           covid_data.push(data[item]);
         }
         this.loading = false;
-this.error = false;
+        this.error = false  ;
         this.dataSource.data = this.addGroups(covid_data, this.groupByColumns);
         this.dataSource.filterPredicate = this.customFilterPredicate.bind(this);
       },

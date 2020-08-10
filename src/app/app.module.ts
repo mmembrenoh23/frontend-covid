@@ -17,6 +17,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-field';
 import { TableComponent } from './components/table/table.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { SingleCountryComponent } from './components/single-country/single-country.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NavbarComponent,
     TableComponent,
     LoadingComponent,
+    SingleCountryComponent,
   ],
   imports: [
     BrowserModule,

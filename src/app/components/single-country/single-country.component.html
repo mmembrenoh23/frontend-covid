@@ -1,0 +1,57 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-success card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">map</i>
+            </div>
+            <p class="card-category">Country</p>
+            <h3 class="card-title">{{ covid_data.country }}
+            <h3 class="card-title">{{ covid_data.continent }}</h3>
+            </h3>
+          </div>
+          <div class="card-footer">
+            <div class="stats">
+              <i class="material-icons">date_range</i> Last updated {{ covid_data.time }}
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-warning card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">content_copy</i>
+            </div>
+            <p class="card-category">Cases</p>
+            <h3 class="card-title">{{ covid_data.cases | number:'4.0' }}
+            </h3>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card card-stats">
+          <div class="card-header card-header-warning card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">people</i>
+            </div>
+            <p class="card-category">Population</p>
+            <h3 class="card-title">{{ covid_data.population | number:'4.0' }}
+            </h3>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-sm-6">
+        <a [routerLink]="['/dashboard']" class="btn btn-outline-danger btn-block">Back</a>
+      </div>
+    </div>
+
+  </div>
+</div>

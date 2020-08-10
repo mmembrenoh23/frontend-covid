@@ -14,12 +14,11 @@ export class TableComponent implements OnInit {
     'cases',
     'time',
     'continent',
+    'actions',
   ];
 
   groupByColumns: string[] = ['continent'];
-  constructor() {
-
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 
