@@ -18,6 +18,7 @@ import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-
 import { TableComponent } from './components/table/table.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { SingleCountryComponent } from './components/single-country/single-country.component';
+import { PageNotFoundComponent } from './components/error/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { SingleCountryComponent } from './components/single-country/single-count
     TableComponent,
     LoadingComponent,
     SingleCountryComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

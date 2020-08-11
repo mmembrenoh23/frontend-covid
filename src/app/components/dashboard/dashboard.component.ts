@@ -68,10 +68,7 @@ export class DashboardComponent implements OnInit {
     );
   }
 
-  groupHeaderClick(row) {
-    row.expanded = !row.expanded;
-    this.dataSource.filter = performance.now().toString(); // hack to trigger filter refresh
-  }
+
 
   customFilterPredicate(data: CovidSource | GroupBy, filter: string): boolean {
     return data instanceof GroupBy
